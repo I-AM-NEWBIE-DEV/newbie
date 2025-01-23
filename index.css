@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+:root {
+  --dark: #101010;
+  --white: white;
+  --dark-grey: #2c2b2b;
+  --purple: #7f2bff;
+  --purple-dark: #6720d3;
+  --grey: #9c9c9c;
+  --white-20: #fff3;
+  --base-color-brand--orange: #ef7a54;
+}
+html {
+  height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  font-family: Inter, sans-serif;
+  font-size: 12px;
+}
+body {
+  background-color: var(--dark);
+  color: #fff;
+  font-size: 1.25rem;
+  line-height: 1.4;
+  min-height: 100%;
+}
+a {
+  color: #FFF;
+  text-decoration: none;
+}
+
+.navbar {
+  background-color: var(--dark-grey);
+  border-radius: 1rem;
+  justify-content: center;
+  align-items: center;
+  padding: .5rem .5rem .5rem 1.5rem;
+  display: flex;
+  position: fixed;
+  top: 2rem;
+  box-shadow: 0 4px 20px #0003, inset 0 1px #ffffff24;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 1.5rem;
+  font-size: 1.2rem;
+}
+.navbar .ca {
+  font-weight: 600;
+  font-size: 1.4rem;
+}
+.navbar .event {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--purple);
+  border-radius: .75rem;
+  padding: .85rem 1.3rem;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+.navbar .label_icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+
+.box {
+  scroll-margin: 9rem;
+  border-radius: 1rem;
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+  background-color: #1a1919;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 2rem 1rem;
+  box-sizing: border-box;
+  /* word-break: break-all; */
+  line-height: 2rem;
+  color: var(--grey);
+  text-align: center;
+  width: calc(100% - 4rem);
+  box-sizing: border-box;
+}
+
+.box .info-ca-text  {
+  font-size: 0.8rem;
+}
+.box .info-link  {
+  color: var(--base-color-brand--orange);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff0000, #ffff08);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.box-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #fff;
+}
+.mt-1 {
+  margin-top: 1rem;
+}
+.mt-2 {
+  margin-top: 2rem;
+}
+.mb-2 {
+  margin-bottom: 2rem;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 160px;
+  margin: 0 auto;
+  border: 2px solid transparent; /* 初始透明边框 */
+  /* animation: flashBorder 0.8s infinite; */
+  animation: glow 800ms ease-out infinite alternate;
+  border-radius: 12px;
+}
+
+/* 定义闪烁边框的动画 */
+@keyframes flashBorder {
+  0%, 100% { border-color: transparent; } /* 开始和结束时边框透明 */
+  50% { border-color: #ef7a54; } /* 中间边框变为红色 */
+}
+
+@keyframes glow {
+  0% {
+    border-color: #393;
+    box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 1px 0 #393;
+  }
+  100% {
+    border-color: #6f6;
+    box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 1px 0 #6f6;
+  }
+}
+
+.main .space {
+  height: 9rem;
+}
+
+.main .name {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
