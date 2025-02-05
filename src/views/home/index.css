@@ -1,0 +1,129 @@
+
+.home_wrapper {
+  font-size: 12px;
+  width: 100%;
+}
+.navbar {
+  background-color: var(--dark-grey);
+  border-radius: 1em;
+  justify-content: center;
+  align-items: center;
+  padding: .5em .5em .5em 1.5em;
+  display: flex;
+  position: fixed;
+  top: 2em;
+  box-shadow: 0 4px 20px #0003, inset 0 1px #ffffff24;
+  left: 50%;
+  transform: translateX(-50%);
+  gap: 2em;
+  font-size: 1.2em;
+}
+.navbar .ca {
+  font-weight: 600;
+  font-size: 1.4em;
+}
+.navbar .event {
+  color: #fff;
+  line-height: inherit;
+  cursor: pointer;
+  border: 0;
+  border-radius: 0;
+  text-decoration: none;
+  display: inline-block;
+  background-color: var(--purple);
+  border-radius: .75em;
+  padding: .85em 1.3em;
+  font-weight: 600;
+  transition: background-color .2s;
+}
+.navbar .label_icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+}
+
+
+.box {
+  scroll-margin: 9em;
+  border-radius: 1em;
+  box-shadow: inset 0 0 0 1px #ffffff1a;
+  background-color: #1a1919;
+  margin-left: 2em;
+  margin-right: 2em;
+  padding: 2em 1em;
+  box-sizing: border-box;
+  /* word-break: break-all; */
+  line-height: 2em;
+  color: var(--grey);
+  text-align: center;
+  width: calc(100% - 4em);
+  box-sizing: border-box;
+}
+
+.box .info-ca-text  {
+  font-size: 1em;
+  word-break: break-all;
+}
+.box .info-link  {
+  color: var(--base-color-brand--orange);
+}
+
+.gradient-text {
+  background: linear-gradient(to right, #ff0000, #ffff08);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+}
+.box-title {
+  font-size: 1.5em;
+  font-weight: 600;
+  color: #fff;
+}
+.mt-1 {
+  margin-top: 1em;
+}
+.mt-2 {
+  margin-top: 2em;
+}
+.mb-2 {
+  margin-bottom: 2em;
+}
+.main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.logo {
+  width: 160px;
+  margin: 0 auto;
+  border: 2px solid transparent; /* 初始透明边框 */
+  /* animation: flashBorder 0.8s infinite; */
+  animation: glow 800ms ease-out infinite alternate;
+  border-radius: 12px;
+}
+
+/* 定义闪烁边框的动画 */
+@keyframes flashBorder {
+  0%, 100% { border-color: transparent; } /* 开始和结束时边框透明 */
+  50% { border-color: #ef7a54; } /* 中间边框变为红色 */
+}
+
+@keyframes glow {
+  0% {
+    border-color: #393;
+    box-shadow: 0 0 5px rgba(0,255,0,.2), inset 0 0 5px rgba(0,255,0,.1), 0 1px 0 #393;
+  }
+  100% {
+    border-color: #6f6;
+    box-shadow: 0 0 20px rgba(0,255,0,.6), inset 0 0 10px rgba(0,255,0,.4), 0 1px 0 #6f6;
+  }
+}
+
+.main .space {
+  height: 9em;
+}
+
+.main .name {
+  font-size: 2.5em;
+  text-align: center;
+  margin-top: 2em;
+}
