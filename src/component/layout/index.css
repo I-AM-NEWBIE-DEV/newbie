@@ -1,0 +1,8 @@
+.layout_wrapper {
+  height: calc(var(--app-height, 100vh));
+}
+.content_wrapper {
+  height: calc(var(--app-height, 100vh) - var(--app-header-height, 64px));
+  overflow: hidden;
+  background-color: var(--app-theme-color);
+}
